@@ -16,11 +16,22 @@ defmodule Blog.Web do
   below.
   """
 
+  def schema do
+    quote do
+      use Ecto.Schema
+
+      import Ecto
+      import Ecto.Changeset
+      import Ecto.Query
+    end
+  end
+
   def controller do
     quote do
       use Phoenix.Controller, namespace: Blog.Web
       import Blog.Web.Router.Helpers
       import Blog.Web.Gettext
+      import Blog.Web.Controller
     end
   end
 

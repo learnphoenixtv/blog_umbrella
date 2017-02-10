@@ -1,5 +1,10 @@
 # Blog.Web
 
+The Phoenix component of the `Blog` application. Handles HTTP and template 
+rendering, delegating all logic to the `blog` business logic app.
+
+## Running the Server
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
